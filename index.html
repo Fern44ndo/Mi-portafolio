@@ -1,54 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            color: #243047;
-            text-align: center;
-            margin: 0;
-        }
-        header {
-            background: #172554;
-            color: white;
-            padding: 40px 20px;
-        }
-        section {
-            background: white;
-            margin: 20px auto;
-            padding: 25px;
-            max-width: 650px;
-            border-radius: 12px;
-        }
-        a { color: #2563eb; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TU_NOMBRE | Portafolio</title>
+<style>
+  :root { --bg:#ffffff; --text:#1f2937; --muted:#6b7280; --card:#f3f4f6; --accent:#2563eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111827; --text:#f3f4f6; --muted:#9ca3af; --card:#1f2937; --accent:#60a5fa; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  main { max-width:860px; margin:0 auto; padding:48px 20px; }
+  h1 { font-size:2.2rem; margin:0 0 4px; }
+  h2 { margin-top:48px; border-bottom:2px solid var(--accent); padding-bottom:6px; }
+  .muted { color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+  .card { background:var(--card); border-radius:12px; padding:18px; }
+  .card h3 { margin:0 0 6px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .tags span { display:inline-block; background:var(--card); border-radius:999px; padding:4px 12px; margin:4px 4px 0 0; font-size:.9rem; }
+  footer { margin-top:56px; text-align:center; color:var(--muted); font-size:.9rem; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Hola, soy Jose</h1>
-        <p>Estudiante de Ingeniería de Sistemas</p>
-    </header>
+<main>
+  <header>
+    <h1>TU_NOMBRE</h1>
+    <p class="muted">Estudiante de TU_CARRERA · TU_UNIVERSIDAD</p>
+    <p>Escribe aquí 2 o 3 líneas sobre ti: qué te apasiona, qué estás aprendiendo y qué tipo de proyectos buscas.</p>
+  </header>
 
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Me interesa la programación, las bases de datos
-        y el desarrollo de software.</p>
-    </section>
+  <h2>Tecnologías</h2>
+  <div class="tags">
+    <span>Python</span><span>C++</span><span>Git</span><span>Excel</span><span>Power BI</span>
+  </div>
 
-    <section>
-        <h2>Mis proyectos</h2>
-        <p>Proyecto 1: Sistema de gestión de pedidos.</p>
-        <p>Proyecto 2: Base de datos de ventas.</p>
-    </section>
+  <h2>Proyectos</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Proyecto 1</h3>
+      <p>Describe qué problema resuelve y qué tecnologías usaste.</p>
+      <a href="https://github.com/TU_USUARIO/REPO1">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>Proyecto 2</h3>
+      <p>Describe qué problema resuelve y qué tecnologías usaste.</p>
+      <a href="https://github.com/TU_USUARIO/REPO2">Ver en GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>Proyecto 3</h3>
+      <p>Describe qué problema resuelve y qué tecnologías usaste.</p>
+      <a href="https://github.com/TU_USUARIO/REPO3">Ver en GitHub →</a>
+    </div>
+  </div>
 
-    <section>
-        <h2>Mis conocimientos</h2>
-        <p>HTML, Python, SQL y GitHub.</p>
-    </section>
+  <h2>Contacto</h2>
+  <p>
+    <a href="mailto:TU_CORREO">TU_CORREO</a> ·
+    <a href="https://www.linkedin.com/in/TU_PERFIL">LinkedIn</a> ·
+    <a href="https://github.com/TU_USUARIO">GitHub</a>
+  </p>
+
+  <footer>© 2026 TU_NOMBRE</footer>
+</main>
 </body>
 </html>
